@@ -14,9 +14,3 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-// list of questions
-Route::get('/questions', 'QuestionController@index');
-
-// detail of one question
-Route::get('/questions/{id}', 'QuestionController@show');

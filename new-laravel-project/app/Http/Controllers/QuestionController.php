@@ -8,7 +8,9 @@ class QuestionController extends Controller
 {
     //
     public function index(){
-        return 'This is the list of questions';
+
+        // Prepare the view for the list of questions
+        return $view = view('questions/index');
     }
 
     public function show(){
