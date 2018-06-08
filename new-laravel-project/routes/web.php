@@ -19,4 +19,4 @@ Route::get('/', function () {
 Route::get('/questions', 'QuestionController@index');
 
 // detail of one question
-Route::get('/questions/{id}', 'QuestionController@show');
+Route::get('/questions/{id}', 'QuestionController@show')->name('show question');
